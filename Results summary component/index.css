@@ -32,7 +32,7 @@ main{
     justify-content: center;
     align-items: center;
 }
-/* Card Left */
+/* Card Left / Card Top */
 .card_left{
     background-image: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%) );
     border-radius: 30px;
@@ -73,7 +73,7 @@ color: hsl(241, 100%, 89%);
     margin-bottom: 10px;
 }
 
-/* Card Right */
+/* Card Right / Card Bottom */
 .card_right div{
     display: flex;
     justify-content: space-around;
@@ -83,8 +83,8 @@ color: hsl(241, 100%, 89%);
 .card_right h2,
 .card_right button{
     width: 75%;
-    margin: 10px;
-    padding: 15px 0px ;
+    margin: 8px;
+    padding: 18px 0px ;
 }
 
 .card_right .reaction,
@@ -92,6 +92,19 @@ color: hsl(241, 100%, 89%);
 .card_right .verbal,
 .card_right .visual{
     border-radius: 10px;
+}
+.card_right div img {
+    vertical-align: text-bottom;
+}
+
+.card_right h2,
+.num,
+strong{
+    color: hsl(224, 30%, 27%);
+}
+.num{
+    font-weight: 800; 
+    color: hsla(224, 30%, 27%, 0.377);
 }
 
 .reaction{
@@ -111,8 +124,6 @@ color: hsl(241, 100%, 89%);
     color: hsl(234, 85%, 45%);
 }
 
-
-
 .card_right button{
     border-radius: 30px;
     color: white;
@@ -120,21 +131,48 @@ color: hsl(241, 100%, 89%);
     transition: .5s;
     border: none;
     margin-top: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }
 .card_right button:hover{
     cursor: pointer;
     background-image: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%) );
 }
 
-.card_right h2,
-.num,
-strong{
-    color: hsl(224, 30%, 27%);
+a {
+    text-decoration: none;
 }
-.num{
-    font-weight: 800; 
-    color: hsla(224, 30%, 27%, 0.377);
+a:hover{
+    color: hsl(241, 81%, 54%);
 }
 
 
+@media (max-width: 500px) {
+    .box {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    .card_left,
+    .card_right{
+            width: 100%;
+    }
+
+    .card_left{
+        border-radius: 0px 0px 30px 30px;
+    }
+
+    .card_left h2{
+        margin-top: 15px;
+    
+    }
+    .circle{
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+    }
+    .card_left .text{
+        max-width: 280px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+}
