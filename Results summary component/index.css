@@ -1,0 +1,140 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+main{
+    width: 1440px; 
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+.box {
+    width: 650px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    box-shadow:  20px 20px 30px hsla(241, 81%, 54%, 0.13);
+    }
+.card_left,
+.card_right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Card Left */
+.card_left{
+    background-image: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%) );
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+}
+
+.card_left h2 {
+    font-weight: 700;
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 60%;
+    background-image: linear-gradient(to top,  hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.circle span.p {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.circle span,
+.text,
+.card_left h2{
+color: hsl(241, 100%, 89%);
+}
+
+.card_left .text{
+    max-width: 220px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Card Right */
+.card_right div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card_right div,
+.card_right h2,
+.card_right button{
+    width: 75%;
+    margin: 10px;
+    padding: 15px 0px ;
+}
+
+.card_right .reaction,
+.card_right .memory,
+.card_right .verbal,
+.card_right .visual{
+    border-radius: 10px;
+}
+
+.reaction{
+    background-color: hsla(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%);
+}
+.memory{
+    background-color:  hsla(39, 100%, 56%, 0.1);
+    color: hsl(39, 100%, 56%);
+}
+.verbal{
+    background-color: hsla(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%) ;
+}
+.visual{
+    background-color: hsla(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%);
+}
+
+
+
+.card_right button{
+    border-radius: 30px;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    transition: .5s;
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.card_right button:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%) );
+}
+
+.card_right h2,
+.num,
+strong{
+    color: hsl(224, 30%, 27%);
+}
+.num{
+    font-weight: 800; 
+    color: hsla(224, 30%, 27%, 0.377);
+}
+
+
