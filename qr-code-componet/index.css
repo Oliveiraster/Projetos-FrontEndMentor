@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+:root{
+    --cor-fundo:hsl(212, 45%, 89%) ;
+    --cor-desfoque: hsl(220, 15%, 55%);
+    --cor-back-card: #fff;
+}
+
+body,
+main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    min-height: 650px;
+    justify-content: center;
+    align-items: center; 
+    background-color: var(--cor-fundo);
+}
+body{
+    flex-direction: column;  
+}
+main{
+    flex-direction: row;
+}
+
+.box{
+    overflow: hidden;
+    background-color: var(--cor-back-card);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    width: 330px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.box div img{
+    width: 300px;
+    height: 290px;
+    border-radius: 10px;
+}
+
+.box h1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.box p{
+    text-align: center;
+    font-size: 17px;
+    padding-top: 15px;
+    color: var(--cor-desfoque);
+}
+
+.contato_pessoal {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    padding: 10px;
+}
+.contato_pessoal p {
+    color: #5e9dc7;
+}
+.contato_pessoal a{
+    text-decoration: none;  
+}
