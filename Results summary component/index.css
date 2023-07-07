@@ -1,21 +1,28 @@
 *{
-    margin: 0 ;
+    margin: 0;
     padding: 0;
     font-family: 'Hanken Grotesk', sans-serif;
+    box-sizing: border-box;
 }
 
+body,
 main{
-    width: 1440px; 
-}
-
-.container {
     width: 100vw;
-    height: 92vh;
+    height: 100vh;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+main{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    }
+}
+
 .box {
     width: 650px;
     height: 500px;
@@ -139,7 +146,7 @@ strong{
 }
 
 .contato_pessoal {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
