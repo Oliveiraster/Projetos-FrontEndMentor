@@ -164,7 +164,7 @@ strong{
 
 @media (max-width: 500px) {
     body{
-        height: 900px;
+        min-height: 900px;
     }
     .box {
         width: 375px;

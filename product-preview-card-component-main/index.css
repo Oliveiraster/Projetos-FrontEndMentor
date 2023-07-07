@@ -8,6 +8,7 @@ body,
 main{
     width: 100vw;
     height: 100vh;
+    min-height: 650px;
 }
 body{
     display: flex;
@@ -138,7 +139,7 @@ p{
     margin: 50px;
     width: 335px;
     min-width: 335px;
-    height: 600px;
+    min-height: 620px;
     flex-direction: column;
     margin: 0px;
    }
