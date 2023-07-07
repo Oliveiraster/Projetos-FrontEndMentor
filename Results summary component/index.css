@@ -10,7 +10,7 @@ main{
 
 .container {
     width: 100vw;
-    height: 100vh;
+    height: 92vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -138,13 +138,21 @@ strong{
     background-image: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%) );
 }
 
-a {
-    text-decoration: none;
+.contato_pessoal {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    padding: 5px;
 }
-a:hover{
-    color: hsl(241, 81%, 54%);
+.contato_pessoal p {
+    color: #5e9dc7;
 }
-
+.contato_pessoal a{
+    text-decoration: none;  
+}
 
 @media (max-width: 500px) {
     .box {

@@ -128,11 +128,9 @@ p{
 }
 .contato_pessoal p {
     color: #5e9dc7;
-
 }
 .contato_pessoal a{
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
 
 @media  screen and (max-width: 600px ) {
