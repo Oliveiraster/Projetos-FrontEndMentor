@@ -10,7 +10,7 @@
 body,
 main{
     width: 100vw;
-    height: 92vh;
+    height: 100vh;
 }
 body{
     display: flex;
