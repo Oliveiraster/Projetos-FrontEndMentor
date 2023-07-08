@@ -132,9 +132,12 @@ main .box{
         min-width: 330px;
         background-color: var(--cor-main);
     }
+    div.container{
+        width: auto;
+    }
     main .box{
         flex-direction: column-reverse;
-        width: 375px;
+        width: 335px;
     }
 
     .image{
@@ -147,11 +150,14 @@ main .box{
         text-align: center;
     }
 
+    .text h1{
+        font-size: 30px;
+    }
     .text p{
         text-align: center;
         padding-right: 0;
         padding: 10px;
-        font-size: 18px;
+        font-size: 16px;
     }
     .text div{
         flex-direction: column;
