@@ -125,7 +125,7 @@ main .box{
 }
 
 @media (max-width:500px){
-    body,main{
+    body,html,main{
         width: 100vw;
         height: 100vh;
         min-height:830px;
