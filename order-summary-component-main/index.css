@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body,
+main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    min-height: 650px;
+    justify-content: center;
+    align-items: center; 
+    background-color: var(--Pale-blue);
+}
+body{
+    flex-direction: column;  
+}
+main{
+    text-align: center;
+    flex-direction: row;
+}
+main .box{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 400px;
+    height: 630px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 50px var(--Desaturated-blue);
+}
+
+main .box .image img{
+    width: 100%;
+    height: 100%;
+}
+
+.box .text{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 30px;
+}
+.box .text h1{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.box .text p{
+    color: var(--Desaturated-blue);
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.box .text .valor{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    border-radius: 10px;
+    margin-bottom:25px;
+}
+
+.box .text .valor div{
+    display: flex;
+    align-items: center;
+}
+.box_valor{
+    display: flex;
+    margin-left: 20px;
+    flex-direction:column;
+    margin-top: 20px;
+}
+.box_valor span{
+    font-weight: 600;
+}
+
+.text .valor a{
+    color: var(--Bright-blue);
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.text .valor a:hover{
+    color:  rgb(144, 125, 252);
+}
+.text button{
+    padding: 15px;
+    color: white;
+    background-color: var(--Bright-blue);
+    border: none;
+    font-weight: 900;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    box-shadow: 0px 20px 10px 1px var(--Pale-blue);
+}
+.text button:hover{
+    cursor: pointer;
+    background-color:  rgb(144, 125, 252);
+}
+.text a {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--Desaturated-blue);
+}
+.text a:hover{
+    color: black ;
+}
+.contato_pessoal {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    padding: 10px;
+}
+.contato_pessoal p {
+    color: #5e9dc7;
+}
+.contato_pessoal a{
+    text-decoration: none;  
+}
+
+/* stylo no html original
+       .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+*/
