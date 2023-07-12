@@ -115,6 +115,7 @@ div.card_3 button:hover{
 
 @media (max-width: 500px) {
     body,html{
+        background-color: var(--fonte-texto);
         min-width: 375px;
         min-height: 1500px;
     }
