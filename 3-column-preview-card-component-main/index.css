@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+}
+:root{
+    --cor-card-1: hsl(31, 77%, 52%);
+    --cor-card-2: hsl(184, 100%, 22%);
+    --cor-card-3: hsl(179, 100%, 13%);
+    --cor-paragrafo:hsla(0, 0%, 100%, 0.75);
+
+    --fonte-titulo: 'Big Shoulders Display', cursive;
+    --fonte-texto: 'Lexend Deca', sans-serif;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    min-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.box{
+    width: 900px;
+    height: 500px;
+    display: flex;
+}
+div.card_1,
+div.card_2,
+div.card_3{
+    color: #fff;
+    padding: 46px;
+}
+div.card_1 h1,
+div.card_2 h1,
+div.card_3 h1{
+    font-size: 40px;
+    font-family: var(--fonte-titulo);
+    margin: 30px 0px 30px 0px;
+}
+div.card_1 p,
+div.card_2 p,
+div.card_3 p{
+    font-size: 15px;
+    line-height: 1.5em;
+    font-family: var(--fonte-texto);
+    color: var(--cor-paragrafo);
+    margin-bottom: 6em;
+}
+
+
+div.card_1{
+    background-color: var(--cor-card-1);
+    border-radius: 10px 0px 0px 10px;
+}
+div.card_2{
+    background-color: var(--cor-card-2);
+}
+div.card_3{
+    background-color: var(--cor-card-3);
+    border-radius: 0px 10px 10px 0px;
+}
+button{
+    border: solid #fff;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: 700;
+    background-color: #fff;
+}
+div.card_1 button{
+    color: var(--cor-card-1);
+}
+div.card_2 button{
+    color: var(--cor-card-2);
+}
+div.card_3 button{
+    color: var(--cor-card-3);
+}
+div.card_1 button:hover,
+div.card_2 button:hover,
+div.card_3 button:hover{
+    cursor: pointer;
+    border: solid #fff;
+    background-color:#ffffff00;
+    color:white;
+}
+
+.contato_pessoal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    padding: 10px;
+}
+.contato_pessoal p {
+    color: #5e9dc7;
+}
+.contato_pessoal a{
+    text-decoration: none;  
+}
+
+@media (max-width: 500px) {
+    body,html{
+        min-width: 375px;
+        min-height: 1500px;
+    }
+    div.box{
+        flex-direction: column;
+        width: 350px;
+        min-height: 1300px;
+    }
+    div.card_1,
+    div.card_2,
+    div.card_3{
+        width: 100%;
+        min-height: 450px;
+
+    }
+    div.card_1{
+        border-radius: 10px 10px 0px 0px;
+    }
+    div.card_3{
+        border-radius: 0px 0px 10px 10px;
+    }
+    div.card_1 p,
+    div.card_2 p,
+    div.card_3 p{
+        letter-spacing: 1px;
+        padding-right: 30px;
+        margin-bottom: 2em;
+    }
+    button{
+        padding: 15px 40px;
+    }
+}
