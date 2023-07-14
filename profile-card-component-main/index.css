@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --borda: hsla(0, 0%, 59%, 0.151) ;
+}
+html,body{
+    height: 100vh;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Dark-cyan) ;
+}
+main{
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 52vw bottom 35vh, left 50vw top 52vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+section.box{
+    overflow: hidden;
+    width: 370PX;
+    height: 380PX;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+section.box div.img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    background-image: url(images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40%;
+}
+section.box div.img img{
+    border-radius: 50%;
+    border: 5px solid white;
+    position: absolute;
+    top: 100px;
+}
+
+section.box .text{
+    overflow: hidden;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+section.box .text p{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.text span{
+    margin-bottom: 20px;
+}
+section.box .text span{
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+}
+.text hr.line{
+    width: 100%;
+    border-color: var(--borda);
+}
+section.box .text .list{
+    width: 80%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.list p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15px;
+}
+.list span{
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+.contato_pessoal {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    
+}
+.contato_pessoal p {
+    color: #5e9dc7;
+}
+.contato_pessoal a{
+    text-decoration: none;  
+}
