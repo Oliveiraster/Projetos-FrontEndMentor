@@ -67,7 +67,7 @@ main .btn{
 }
 @media (max-width: 500px) {
     main{
-        max-width: 375px;
+        max-width: 365px;
     }
     .space{
         background-image: url(images/pattern-divider-mobile.svg);
