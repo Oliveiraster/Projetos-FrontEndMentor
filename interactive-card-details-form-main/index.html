@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+ <main id="container">
+  
+    <section id="colunm_left">
+      <picture>
+        <source media="(max-width: 871px )" srcset="images/bg-main-mobile.png">
+        <img class="back" src="images/bg-main-desktop.png" alt="imagem_fundo">
+      </picture>
+      <div id="card_front">
+        <div class="circle">
+          <div class="circle_g"></div>
+          <div class="circle_p"></div>
+        </div>
+        <img src="images/bg-card-front.png" alt="card_front">
+        <span id="circle_G"></span> <span id="circle_p"></span>
+        <p id="n_card">
+          <span id="card1">0000</span> 
+          <span id="card2">0000</span> 
+          <span id="card3">0000</span> 
+          <span id="card4">0000</span>
+        </p>
+        <div class="name_data">
+          <p id="name_card">JANE APPLESEED</p>
+          <p id="data_card"><span id="mes">00</span>/<span id="ano">00</span></p>
+        </div>
+      </div>
+      
+      <div id="card_back">
+        <img src="images/bg-card-back.png" alt="card_back">
+          <p id="code_s">000</p>
+      
+      </div>
+    </section>
+    <section id="colunm_right"> 
+      <div id="form" class="form ">
+
+        <label for="card_name">CARDHOLDER NAME
+        <input name="card_name" id="card_name" type="text" placeholder="e.g. Jane Appleseed" maxlength="26"></input>
+        </label>
+
+        <label for="number_card">CARD NUMBER
+        <input id="number_card" name="number_card" type="text" placeholder="e.g. 1234 5678 9123 0000" maxlength="16"></input>
+        </label>
+
+        <div class="div_data">
+          <div>
+            <label for="month year">EXP. DATE (MM/YY)
+            <input id="month" type="text" placeholder="MM" maxlength="2"></input>
+            <input id="year" type="text" placeholder="YY" maxlength="2"></input>
+            </label>
+          </div>
+
+          <div> 
+            <label for="cvc">CVC</label>
+            <input id="cvc" type="text"  placeholder="e.g. 123" maxlength="3"/>
+          </div>
+
+        </div>
+        <button onclick="check()">Confirm</button>
+      </div>
+      <div id="thank" class="thank  hide">
+        <img class="check" src="images/icon-complete.svg" alt="check">
+        <h1>Thank you!</h1>
+        <p>We've added your card details</p>
+        <button onclick="window.location.reload()">Continue</button>
+      </div>
+    </section >
+ </main>
+<script src="index.js"></script>
+</body>
+</html>
